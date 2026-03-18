@@ -1,0 +1,33 @@
+# Default behavior for text files
+* text=auto
+
+# Shell scripts should always use LF
+*.sh text eol=lf
+
+# Python files should use LF
+*.py text eol=lf
+
+# JavaScript, JSX, TS, TSX should use LF
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# CSS and other text files
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Binary files (don’t touch)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.ttf binary
+
+# Env files should remain untouched
+.env text eol=lf
+.env.production text eol=lf
