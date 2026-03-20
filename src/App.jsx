@@ -6,7 +6,7 @@ import { Testimonials } from "@/sections/Testimonials"
 import { Contact } from "@/sections/Contact"
 import { Navbar } from "@/layouts/Navbar"
 import { useState } from "react"
-import { Footer } from "./layouts/Footer"
+import { Footer } from "@/layouts/Footer"
 
 function App() {
   const [count, setCount] = useState(0)
