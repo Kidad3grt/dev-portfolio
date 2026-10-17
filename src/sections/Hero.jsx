@@ -83,9 +83,11 @@ export const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <a href="#contact">
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
+              </a>
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
                 Download CV
@@ -96,8 +98,8 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
+                { icon: Github, href: "https://github.com/Kidad3grt" },
+                { icon: Linkedin, href: "linkedin.com/in/emmanuel-alozie-a39730308" },
               ].map((social, idx) => (
                 <a
                   key={idx}

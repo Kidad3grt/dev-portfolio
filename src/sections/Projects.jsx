@@ -1,45 +1,9 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-const projects = [
-  {
-    title: "Fintech Dashboard",
-    description:
-      "A comprehensive financial analytics platform with data visualization.",
-    image: "/dashboard.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-featured e-commerce solution with real-time cart management, payment processing, and analytics dashboard.",
-    image: "/Ecommerce.png",
-    tags: ["django", "paypal", "SQLite", "Bootstrap/Css"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "NoteApp",
-    description:
-      "A simple and efficient note-taking application with real-time synchronization.",
-    image: "/Notes-project.png",
-    tags: ["React", "django", "Python", "rest framework API"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Movie ticket booking web application",
-    description:
-      "A web application for booking movie tickets with real-time availability updates and secure payment processing.",
-    image: "/Movie-app.png",
-    tags: ["django", "REST framework API", "SQLite", "python"],
-    link: "#",
-    github: "#",
-  },
-];
+import { useContent } from "@/contentStore";
 
 export const Projects = () => {
+  const projects = useContent("projects");
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       {/* Bg glows */}

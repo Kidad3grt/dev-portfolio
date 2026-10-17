@@ -5,11 +5,11 @@ import { Projects } from "@/sections/Projects"
 import { Testimonials } from "@/sections/Testimonials"
 import { Contact } from "@/sections/Contact"
 import { Navbar } from "@/layouts/Navbar"
-import { useState } from "react"
 import { Footer } from "@/layouts/Footer"
+import { ContentManager } from "@/pages/ContentManager"
 
 function App() {
-  const [count, setCount] = useState(0)
+  if (window.location.pathname === "/admin") return <ContentManager />
 
   return (
     <div className="overflow-x-hidden" >

@@ -1,26 +1,7 @@
-const experiences = [
-  {
-    period: "2022 — Present",
-    role: "Freelancer developer/Data analyst", 
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and Visualizations, handling everything from design to deployment.",
-    technologies: ["React", "Python", "Node.js", "django", "Power BI", "Excel", "PostgreSQL"],
-    current: true,
-  },
-  {
-    period: "2020 — 2022",
-    role: "Data Analyst",
-    company: "Self-Employed",
-    description:
-      "Built and maintained multiple data pipelines and dashboards for clients across various industries. Analyzed large datasets to extract actionable insights and presented findings to stakeholders.",
-    technologies: ["Excel", "Power BI","PostgreSQL", "Python"],
-    current: false,
-  },
- 
-];
+import { useContent } from "@/contentStore";
 
 export const Experience = () => {
+  const experiences = useContent("experience");
   return (
     <section id="experience" className="py-32 relative overflow-hidden">
       <div
